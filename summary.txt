@@ -1,0 +1,19 @@
+To make this shopping simulation as realistic as I could I adjusted: 
+
+- The number of checkers
+    - I changed the number of checkers to 3, which I believe to be realistic. More checkers processed customers faster and reduced the queue, adding to the realism.
+    - I also increased the amount of items a checker can process in a minute to make thes simulate more realistic
+
+- Shopper behavior
+    - I changed the item numbers from 1 to 50 as I believe this to be most realistic. Sometimes I may go in to the store for one item. 
+    - Shoppers with 30-50 items could decide to reduce their items in order to speed up their shopping and checkout time
+    - if 30 <= items <= 50:
+        items = items // 2
+
+- Every customer shops but checkout time varies based on item count
+    - I simulated self-checkout lanes for customers with very few items
+
+- Varied customer arrival between every 1 and 3 minutes
+
+Increasing the number of cashiers significantly reduced average wait times and total idle time. 
+Large item shoppers slowed the system down, but shoppers with very few items benefited from faster checkout with self-checkout.
